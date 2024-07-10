@@ -1,0 +1,137 @@
+:root{
+    --main-width-pad-left: 300px; 
+}
+@font-face {
+    font-family: "vazir";
+    src: url("assets/fonts/Vazir.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "vazir";
+}
+
+body{
+    background: url("assets/images/background.png");
+    direction: rtl;
+}
+
+form{
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.903);
+    padding: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.input-text{
+    border-radius: 5px;
+    border: 0.9px solid rgba(86, 59, 131, 0.259);
+    outline: none;
+    width: var(--main-width-pad-left);
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    margin-bottom: 3px;
+    
+}
+
+
+.accept-roles{
+    display: flex;
+    gap: 5px;
+}
+
+.register-button{
+    border: none;
+    background-color: #31D576;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    div{
+        height: 25px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #0065CA;
+}
+
+small{
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(88, 88, 100, 0.5);
+    display: block;
+    border-radius: 5px;
+    animation: smallTag 0.3s 1 none ;
+    transition: 0.5s;
+    text-align: center;
+    color: red;
+}
+
+@keyframes smallTag {
+    0%{
+        opacity: 0%;
+    }
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+
+
+.animate-spin{
+    animation: spin 1s linear infinite;
+}
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 1s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+@keyframes rotation {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+} 
+
+.name-container{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.903);
+    color: black;
+    border-radius: 5px;
+
+}
+
+.centred{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
