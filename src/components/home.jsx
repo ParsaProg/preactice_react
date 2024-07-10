@@ -10,6 +10,7 @@ const Home = () => {
       <h3>ایمیل: {data.email}</h3>
       <h3>پسورد: {data.password}</h3>
       <h3>بیوگرافی: {data.bio}</h3>
+      <h4>تغییرات: {data.bio}</h4>
     </div>
   );
 };
